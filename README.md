@@ -54,12 +54,11 @@ Board layout: 13x13, minimum number of connected tiles: 2. In this game version 
 
 Joker points can be expended to use bomb wildcards. Note that tiles removed by using a joker will not add to the total score.
 
-| joker       | effect                                   |
-|:------------|:-----------------------------------------|
-| row bomb    | removes all tiles in the selected row    |
-| column bomb | removes all tiles in the selected column |
-| bomb        | removes an area with a radius of 2       |
-|             | tiles around the selected position       |
+| joker       | effect                                                                |
+|:------------|:----------------------------------------------------------------------|
+| row bomb    | removes all tiles in the selected row                                 |
+| column bomb | removes all tiles in the selected column                              |
+| bomb        | removes an area with a radius of 2 tiles around the selected position |
 
 # settings
 
@@ -75,7 +74,7 @@ Corresponding flag: -s, --seed
 
 ## nr columns
 
-Number of columns in the board layout. The minimum value is 2 and the maximum is determined by the terminal width and the tile set, i.e. (width-1)/2 for color tiles and width-1 for a representation with letters or characters.
+Number of columns in the board layout. The minimum value is 2 and the maximum is determined by the terminal width and the tile set, i.e. `(width-1)/2` for color tiles and `width-1` for a representation with letters or characters.
 
 Changing this setting will trigger a new board to be generated.
 
@@ -83,7 +82,7 @@ Corresponding flag: -c, --columns
 
 ## nr rows
 
-Number of rows (or lines) in the board layout. The minimum value is 2 and the maximum is determined by the terminal height (height-3).
+Number of rows (or lines) in the board layout. The minimum value is 2 and the maximum is determined by the terminal height: `(height-3)`.
 
 Changing this setting will trigger a new board to be generated.
 
@@ -135,25 +134,25 @@ Corresponding flag: -j, --jokerfreq
 
 # key bindings
 
- | Key             | Action                     |
- |-----------------|----------------------------|
- | space,enter,tab | remove blocks              |
- | h,left          | move cursor left           |
- | l,right         | move cursor right          |
- | j,down          | move cursor down           |
- | k,up            | move cursor up             |
- | H               | move cursor to left edge   |
- | L               | move cursor to right edge  |
- | J               | move cursor to bottom edge |
- | K               | move cursor to top edge    |
- | n               | new game                   |
- | r               | replay current game        |
- | v               | change game version        |
- | s               | change setting             |
- | z               | redraw board               |
- | q               | quit game                  |
- | u               | use joker                  |
- | x               | pass turn (flood game)     |
- | i               | show game info             |
- | ?               | display key bindings       |"
+| Key             | Action                     |
+|:----------------|:---------------------------|
+| space,enter,tab | remove blocks              |
+| h,left          | move cursor left           |
+| l,right         | move cursor right          |
+| j,down          | move cursor down           |
+| k,up            | move cursor up             |
+| H               | move cursor to left edge   |
+| L               | move cursor to right edge  |
+| J               | move cursor to bottom edge |
+| K               | move cursor to top edge    |
+| n               | new game                   |
+| r               | replay current game        |
+| v               | change game version        |
+| s               | change setting             |
+| z               | redraw board               |
+| q               | quit game                  |
+| u               | use joker                  |
+| x               | pass turn (flood game)     |
+| i               | show game info             |
+| ?               | display key bindings       |
 
